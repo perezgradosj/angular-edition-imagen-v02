@@ -1,0 +1,29 @@
+h1, .image-wrap, h2{
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: blue;
+}
+
+.btn-accent{
+    background-color: green;
+}
+
+.btn-primary, .btn-accent{
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}

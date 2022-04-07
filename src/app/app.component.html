@@ -1,0 +1,27 @@
+<h1>EDICION DE IMAGEN</h1>
+
+<!-- <div class="options">
+  <div class="left">
+    <button class="btn-primary">Recortar</button>
+  </div>
+  <div class="right">
+    <button class="btn-accent">Guardar cambios</button>
+  </div>
+</div> -->
+<hr>
+<h2>IMAGEN ORIGINAL</h2>
+<div class="image-wrap">
+  <img #imageOriginal [src]="imageUrl" alt="">
+</div>
+
+<h2>RECORTE DE IMAGEN</h2>
+<div class="image-wrap">
+  <image-cropper [imageBase64]="imageUrl" (imageCropped)="imageCropped($event)" [aspectRatio]="4 / 2.25" format="jpeg"
+    [imageQuality] = "85">
+  </image-cropper>
+</div>
+
+<h2>RESULTADO - NUEVA IMAGEN</h2>
+<div class="image-wrap">
+  <img [src]="croppedImage" />
+</div>
